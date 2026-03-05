@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Sound Systems | New Special Island</title>
+    <meta name="description"
+        content="Whole-home audio and premium network player amplifiers. Professional installation by NSI Oman.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Shared Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-hero {
+            padding: 160px 0 100px;
+        }
+
+        .page-hero h1 {
+            font-size: clamp(2.5rem, 4vw, 3.5rem);
+        }
+
+        /* Temporary placeholder style for images since API quota was exhausted */
+        .image-placeholder {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #94a3b8;
+            font-weight: 500;
+            border-radius: 8px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            z-index: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">
+                <strong>NSI</strong> Oman
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#products">Products</a>
+                <a href="index.html#about">About Us</a>
+                <a href="#quote" class="btn btn-primary btn-small">Get a Quote</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#products">Products</a>
+            <a href="index.html#about">About Us</a>
+            <a href="#quote">Get a Quote</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero page-hero bg-navy" style="position: relative;">
+        <!-- Embedded Hero Image -->
+        <img src="images/hero_smart_sound_1772727147682.png"
+            alt="Smart Sound Systems"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; opacity: 0.5;">
+        <div class="hero-overlay" style="z-index: 1;"></div>
+        <div class="container hero-content text-center" style="margin: 0 auto; position: relative; z-index: 2;">
+            <h1>Smart Sound Systems</h1>
+            <p style="margin-left: auto; margin-right: auto;">Immerse your space in high-fidelity audio. Beautifully
+                integrated, easy-to-control sound systems designed for luxury homes and modern commercial spaces.</p>
+            <div class="hero-actions" style="justify-content: center;">
+                <a href="#features" class="btn btn-accent">Explore Amplifiers</a>
+                <a href="#quote" class="btn btn-outline-light">Request Setup</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits/Intro Section -->
+    <section class="features section-padding">
+        <div class="container">
+            <div class="section-header text-center" style="max-width: 800px; margin: 0 auto 60px auto;">
+                <h2>Music in every room.</h2>
+                <p>NSI Oman installs premium multi-room audio solutions. We seamlessly integrate network players and
+                    amplifiers with discrete in-ceiling or wall-mounted speakers so the technology disappears, leaving
+                    only the music.</p>
+            </div>
+
+            <div class="benefits-layout"
+                style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                <div class="benefit-row" style="border: none; padding-bottom: 0;">
+                    <div class="benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                        </svg>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Multi-Room Audio</h3>
+                        <p>Play the same song perfectly synchronized throughout the entire house, or let family members
+                            listen to different tracks in individual rooms simultaneously.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-row" style="border: none; padding-bottom: 0;">
+                    <div class="benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Commercial Grade</h3>
+                        <p>Our amplifiers support 100V local connections and Emergency Fire Alarm integrations, making
+                            them perfect for boutiques, restaurants, and offices.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-row" style="border: none; padding-bottom: 0;">
+                    <div class="benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                        </svg>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>App & Bluetooth Integration</h3>
+                        <p>Stream your favorite playlists directly from your phone through built-in Bluetooth, USB/SD
+                            inputs, or dedicated smart home audio apps.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section id="features" class="products section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Network Player Amplifiers</h2>
+                <p>The core of our audio installations. Powerful, reliable, and intelligent hardware designed to drive
+                    flawless sound.</p>
+            </div>
+
+            <div class="camera-types-list">
+                <!-- AXT8606 -->
+                <div class="camera-type-row">
+                    <div class="camera-type-image">
+                        <img src="images/axt_amplifier_1772727166474.png"
+                            alt="Network Player Amplifier"
+                            style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px; display: block;">
+                    </div>
+                    <div class="camera-type-info">
+                        <h3>AXT8600 Series Amplifiers</h3>
+                        <p>The AXT8606 (60W) and AXT8665 (650W) are premium network player amplifiers featuring a clear
+                            digital screen and double network backup design for absolute reliability.</p>
+                        <ul class="camera-features">
+                            <li>Built-in MP3, USB, and SD interfaces for local music</li>
+                            <li>Precise Bass and Treble equalizer controls</li>
+                            <li>1 AUX audio output and 1 Microphone input</li>
+                            <li>Local emergency input/fire alarm system interoperability</li>
+                        </ul>
+                        <a href="#quote" class="btn btn-outline btn-small">Get Quote</a>
+                    </div>
+                </div>
+
+                <!-- Speakers -->
+                <div class="camera-type-row reverse">
+                    <div class="camera-type-image">
+                        <img src="images/ceiling_speaker_1772727184604.png"
+                            alt="Discrete Speaker Integration"
+                            style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px; display: block;">
+                    </div>
+                    <div class="camera-type-info">
+                        <h3>Discrete Speaker Integration</h3>
+                        <p>Coupled with our powerful network amplifiers, we install flush-mount ceiling speakers and
+                            low-profile wall speakers that blend perfectly into your interior design without
+                            compromising on acoustic depth.</p>
+                        <ul class="camera-features">
+                            <li>Aesthetic flush-mount grills</li>
+                            <li>Engineered for optimal sound dispersion</li>
+                            <li>Weather-proof options for outdoor patios</li>
+                        </ul>
+                        <a href="#quote" class="btn btn-outline btn-small">Get Quote</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq section-padding">
+        <div class="container text-center">
+            <div class="section-header" style="margin: 0 auto 48px auto;">
+                <h2>Common Smart Sound Questions</h2>
+            </div>
+
+            <div class="faq-accordion" style="margin: 0 auto; text-align: left;">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I still connect my TV to the ceiling speakers?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. We can route audio outputs from your television or home theater receiver directly into
+                            the amplifier network, allowing your TV sound to play beautifully through the installed room
+                            speakers.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Are these suitable for a busy restaurant or retail store?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. The 100V lines in our AXT amplifiers are designed specifically for commercial
+                            environments, allowing long cable runs and reliable daisy-chaining of multiple speakers
+                            across a large floorplan while maintaining fire-safety standards.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Quote Section -->
+    <section id="quote" class="cta section-padding bg-navy">
+        <div class="container text-center">
+            <h2>Experience high-fidelity audio.</h2>
+            <p style="color: #cbd5e1;">Get a clear quote encompassing amplifiers, speakers, wiring, and clean
+                installation.</p>
+            <a href="mailto:info@nsioman.com" class="btn btn-accent mt-2">Get Installation Quote</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>New Special Island (NSI)</h3>
+                    <p>Quality products • Professional installation</p>
+                    <p class="footer-desc">We sell good-quality products and professionally install them for clients.
+                        Expect clear quotes, practical recommendations, and a clean finish.</p>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Call / WhatsApp: <strong>97692325</strong></p>
+                    <p>Email: <strong>info@nsioman.com</strong></p>
+                    <p>Address: Building No-8106 D, Al Hail Al Janubiyah street, Al Hail South, Muscat, Sultanate of
+                        Oman</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="smart-cctv.html">Smart CCTV</a></li>
+                        <li><a href="smart-film.html">Smart Glass Film</a></li>
+                        <li><a href="smart-sound.html">Smart Sound</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 New Special Island (NSI). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

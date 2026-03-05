@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Access Control | New Special Island</title>
+    <meta name="description"
+        content="Secure, keyless entry systems for homes and offices. PIN, card, biometric, and app access. Professional installation by NSI Oman.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Shared Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-hero {
+            padding: 160px 0 100px;
+        }
+
+        .page-hero h1 {
+            font-size: clamp(2.5rem, 4vw, 3.5rem);
+        }
+
+        /* Temporary placeholder style for images since API quota was exhausted */
+        .image-placeholder {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #94a3b8;
+            font-weight: 500;
+            border-radius: 8px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-placeholder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            z-index: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">
+                <strong>NSI</strong> Oman
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#products">Products</a>
+                <a href="index.html#about">About Us</a>
+                <a href="#quote" class="btn btn-primary btn-small">Get a Quote</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#products">Products</a>
+            <a href="index.html#about">About Us</a>
+            <a href="#quote">Get a Quote</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero page-hero bg-navy" style="position: relative;">
+        <!-- Embedded Hero Image -->
+        <img src="images/hero_smart_access_1772727097077.png"
+            alt="Smart Access Control"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; opacity: 0.5;">
+        <div class="hero-overlay" style="z-index: 1;"></div>
+        <div class="container hero-content text-center" style="margin: 0 auto; position: relative; z-index: 2;">
+            <h1>Smart Access Control</h1>
+            <p style="margin-left: auto; margin-right: auto;">Seamless, secure, keyless entry. Manage access to your
+                home or office efficiently with modern smart locks, biometric readers, and digital credentials.</p>
+            <div class="hero-actions" style="justify-content: center;">
+                <a href="#solutions" class="btn btn-accent">See Solutions</a>
+                <a href="#quote" class="btn btn-outline-light">Request Setup</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits/Intro Section -->
+    <section class="features section-padding">
+        <div class="container">
+            <div class="section-header text-center" style="max-width: 800px; margin: 0 auto 60px auto;">
+                <h2>Leave your keys behind.</h2>
+                <p>NSI Oman installs advanced access control systems that provide peace of mind and incredible
+                    convenience. Never worry about losing keys or being locked out again.</p>
+            </div>
+
+            <div class="benefits-layout"
+                style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                <div class="benefit-row" style="border: none; padding-bottom: 0;">
+                    <div class="benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Keyless Convenience</h3>
+                        <p>Unlock your doors effortlessly using a secure PIN code, a registered RFID card/fob, or even
+                            your own fingerprint for ultimate convenience.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-row" style="border: none; padding-bottom: 0;">
+                    <div class="benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Visitor Management</h3>
+                        <p>Generate temporary or one-time passcodes from your phone to grant access to guests,
+                            contractors, or delivery drivers while you are away.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-row" style="border: none; padding-bottom: 0;">
+                    <div class="benefit-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                        </svg>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>Remote App Control</h3>
+                        <p>Lock or unlock your doors from anywhere in the world using the smart app. You can also view
+                            logs of exactly who entered and at what time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section id="solutions" class="products section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Access Solutions</h2>
+                <p>Tailored security hardware designed for residential front doors, office partititions, and main
+                    entrances.</p>
+            </div>
+
+            <div class="camera-types-list">
+                <!-- Smart Locks -->
+                <div class="camera-type-row">
+                    <div class="camera-type-image">
+                        <img src="images/smart_lock_door_1772727113964.png"
+                            alt="Residential Smart Locks"
+                            style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px; display: block;">
+                    </div>
+                    <div class="camera-type-info">
+                        <h3>Residential Smart Locks</h3>
+                        <p>Upgrade your home's main entrance or bedroom doors with high-security, motorized smart
+                            deadbolts and handle sets. Elegant designs that match modern and classic home aesthetics.
+                        </p>
+                        <ul class="camera-features">
+                            <li>Multiple unlock methods: Fingerprint, PIN, App, physical backup key</li>
+                            <li>Auto-lock feature when door closes</li>
+                            <li>Battery operated with low-battery alerts and emergency power terminal</li>
+                        </ul>
+                        <a href="#quote" class="btn btn-outline btn-small">Get Quote</a>
+                    </div>
+                </div>
+
+                <!-- Office Access Control -->
+                <div class="camera-type-row reverse">
+                    <div class="camera-type-image">
+                        <img src="images/office_card_reader_1772727132014.png"
+                            alt="Commercial Access Control"
+                            style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px; display: block;">
+                    </div>
+                    <div class="camera-type-info">
+                        <h3>Commercial Access Control</h3>
+                        <p>Restrict and track access to sensitive office areas, server rooms, or main building
+                            entrances. We install centralized magnetic locks, drop bolts, and smart card readers for
+                            businesses.</p>
+                        <ul class="camera-features">
+                            <li>Heavy-duty magnetic locks (Maglocks)</li>
+                            <li>RFID card, key fob, and facial recognition terminals</li>
+                            <li>Centralized employee attendance and access management software</li>
+                        </ul>
+                        <a href="#quote" class="btn btn-outline btn-small">Get Quote</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq section-padding">
+        <div class="container text-center">
+            <div class="section-header" style="margin: 0 auto 48px auto;">
+                <h2>Common Smart Access Questions</h2>
+            </div>
+
+            <div class="faq-accordion" style="margin: 0 auto; text-align: left;">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What happens if the battery dies on my smart lock?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Smart locks give you months of low-battery warnings via the app and audio prompts. If they
+                            completely die, you can always use the provided physical backup key, or temporarily
+                            jump-start the lock from the outside using a standard 9V battery or power bank via USB-C.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can you install smart locks on glass doors?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. We have specialized smart locks and access control hardware designed specifically for
+                            frameless glass doors, aluminum framed glass doors, and standard wooden doors.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is it safe against hacking?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. We only supply hardware utilizing bank-level AES-128 encryption. Physical attacks
+                            are thwarted by anti-tamper alarms and high-grade metal alloy construction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Quote Section -->
+    <section id="quote" class="cta section-padding bg-navy">
+        <div class="container text-center">
+            <h2>Secure your entry.</h2>
+            <p style="color: #cbd5e1;">Get a clear quote encompassing smart locks, magnetic closures, setup, and clean
+                installation.</p>
+            <a href="mailto:info@nsioman.com" class="btn btn-accent mt-2">Get Installation Quote</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>New Special Island (NSI)</h3>
+                    <p>Quality products • Professional installation</p>
+                    <p class="footer-desc">We sell good-quality products and professionally install them for clients.
+                        Expect clear quotes, practical recommendations, and a clean finish.</p>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Call / WhatsApp: <strong>97692325</strong></p>
+                    <p>Email: <strong>info@nsioman.com</strong></p>
+                    <p>Address: Building No-8106 D, Al Hail Al Janubiyah street, Al Hail South, Muscat, Sultanate of
+                        Oman</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="smart-access.html">Smart Access Control</a></li>
+                        <li><a href="smart-home.html">Smart Home System</a></li>
+                        <li><a href="smart-sound.html">Smart Sound System</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 New Special Island (NSI). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
