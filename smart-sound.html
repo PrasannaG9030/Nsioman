@@ -83,10 +83,58 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero page-hero bg-navy" style="position: relative;">
-        <!-- Embedded Hero Image -->
-        <img src="images/hero_smart_sound_1772727147682.png" alt="Smart Sound Systems"
-            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; opacity: 0.5;">
+    <section class="hero page-hero bg-navy" style="position: relative; overflow: hidden;">
+        <!-- Slideshow Container -->
+        <div class="hero-slideshow" id="sound-slideshow">
+            <div class="hero-slide active" style="background-image: url('images/sound_hero_slide_1_1773502556262.png');"></div>
+            <div class="hero-slide" style="background-image: url('images/sound_hero_slide_2_1773502574009.png');"></div>
+            <div class="hero-slide" style="background-image: url('images/sound_hero_slide_3_1773502589648.png');"></div>
+        </div>
+        
+        <style>
+            .hero-slideshow {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+            .hero-slide {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                opacity: 0;
+                transition: opacity 1s ease-in-out;
+            }
+            .hero-slide.active {
+                opacity: 0.5;
+            }
+            .hero-content {
+                position: relative;
+                z-index: 2;
+            }
+        </style>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const slides = document.querySelectorAll('#sound-slideshow .hero-slide');
+                let currentSlide = 0;
+                
+                if(slides.length > 0) {
+                    setInterval(() => {
+                        slides[currentSlide].classList.remove('active');
+                        currentSlide = (currentSlide + 1) % slides.length;
+                        slides[currentSlide].classList.add('active');
+                    }, 5000);
+                }
+            });
+        </script>
+        
         <div class="hero-overlay" style="z-index: 1;"></div>
         <div class="container hero-content text-center" style="margin: 0 auto; position: relative; z-index: 2;">
             <h1>Smart Sound Systems</h1>

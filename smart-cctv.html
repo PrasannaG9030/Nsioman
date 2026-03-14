@@ -59,11 +59,59 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero page-hero bg-navy">
-        <!-- Reusing hero background style from index.html -->
-        <div class="hero-bg-image" style="background-image: url('images/cctv_hero_1772653826781.png');">
+    <section class="hero page-hero bg-navy" style="position: relative; overflow: hidden;">
+        <!-- Slideshow Container -->
+        <div class="hero-slideshow" id="cctv-slideshow">
+            <div class="hero-slide active" style="background-image: url('images/cctv_hero_slide_1_1773497043874.png');"></div>
+            <div class="hero-slide" style="background-image: url('images/cctv_hero_slide_2_1773497058708.png');"></div>
+            <div class="hero-slide" style="background-image: url('images/cctv_hero_slide_3_1773497074466.png');"></div>
         </div>
-        <div class="hero-overlay"></div>
+        
+        <style>
+            .hero-slideshow {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+            .hero-slide {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                opacity: 0;
+                transition: opacity 1s ease-in-out;
+            }
+            .hero-slide.active {
+                opacity: 0.5; /* Keeping the same opacity as the original hero overlay */
+            }
+            .hero-content {
+                position: relative;
+                z-index: 2;
+            }
+        </style>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const slides = document.querySelectorAll('#cctv-slideshow .hero-slide');
+                let currentSlide = 0;
+                
+                if(slides.length > 0) {
+                    setInterval(() => {
+                        slides[currentSlide].classList.remove('active');
+                        currentSlide = (currentSlide + 1) % slides.length;
+                        slides[currentSlide].classList.add('active');
+                    }, 5000); // Change slide every 5 seconds
+                }
+            });
+        </script>
+
+        <div class="hero-overlay" style="z-index: 1;"></div>
         <div class="container hero-content text-center" style="margin: 0 auto;">
             <h1>Smart CCTV Surveillance</h1>
             <p style="margin-left: auto; margin-right: auto;">Constant security with crystal-clear high-definition
@@ -147,73 +195,77 @@
             </div>
 
             <div class="camera-types-list">
-                <!-- Bullet Camera -->
+                <!-- Bullet Camera (Longse) -->
                 <div class="camera-type-row">
                     <div class="camera-type-image">
-                        <img src="images/cctv_bullet_1772653739308.png" alt="Bullet Camera">
+                        <img src="images/longse_bullet_1773496973833.png" alt="Longse Bullet Camera" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px; display: block;">
                     </div>
                     <div class="camera-type-info">
                         <h3>Bullet Cameras</h3>
                         <p>Highly visible, cylindrical cameras mounted to point towards a specific area. Excellent for
                             long-distance viewing and outdoor deterrence.</p>
+                        <h4 style="margin-top: 15px; margin-bottom: 5px; font-size: 1.1rem; color: #1e293b;">Variations & Sub-types:</h4>
                         <ul class="camera-features">
-                            <li>Strong visual deterrent</li>
-                            <li>Ideal for outdoor walls & fences</li>
-                            <li>Extended IR night-vision range</li>
+                            <li><strong>Full-Color Bullet:</strong> Maintains color imaging 24/7.</li>
+                            <li><strong>Active Deterrence:</strong> Features built-in sirens and strobe lights.</li>
+                            <li><strong>Motorized Varifocal:</strong> Allows adjusting zoom and focus remotely.</li>
                         </ul>
                         <a href="#quote" class="btn btn-outline btn-small">Get Quote</a>
                     </div>
                 </div>
 
-                <!-- Dome Camera -->
+                <!-- Dome Camera (Longse) -->
                 <div class="camera-type-row reverse">
                     <div class="camera-type-image">
-                        <img src="images/cctv_dome_1772653762813.png" alt="Dome Camera">
+                        <img src="images/longse_dome_1773496991765.png" alt="Longse Dome Camera" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px; display: block;">
                     </div>
                     <div class="camera-type-info">
                         <h3>Dome Cameras</h3>
                         <p>Discreet, dome-shaped cameras typically housed in impact-resistant glass. Best for indoor
                             ceilings or covered outdoor spaces.</p>
+                        <h4 style="margin-top: 15px; margin-bottom: 5px; font-size: 1.1rem; color: #1e293b;">Variations & Sub-types:</h4>
                         <ul class="camera-features">
-                            <li>Subtle, unobtrusive profile</li>
-                            <li>Vandal-resistant housing</li>
-                            <li>Wide viewing angle</li>
+                            <li><strong>Vandal-Proof Dome (IK10):</strong> Highly resistant to physical impacts.</li>
+                            <li><strong>IR Dome:</strong> Integrated infrared LEDs for pitch-black night vision.</li>
+                            <li><strong>Mini Dome:</strong> Ultra-compact design for maximum discretion.</li>
                         </ul>
                         <a href="#quote" class="btn btn-outline btn-small">Get Quote</a>
                     </div>
                 </div>
 
-                <!-- Turret/Conch Camera -->
+                <!-- Turret/Conch Camera (Longse) -->
                 <div class="camera-type-row">
                     <div class="camera-type-image">
-                        <img src="images/cctv_turret_1772653806528.png" alt="Turret Camera">
+                        <img src="images/longse_turret_1773497026862.png" alt="Longse Turret Camera" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px; display: block;">
                     </div>
                     <div class="camera-type-info">
                         <h3>Turret / Eyeball Cameras</h3>
                         <p>Ball-and-socket design providing easy angle adjustment without a glass dome, reducing IR
                             glare and cobweb interference.</p>
+                        <h4 style="margin-top: 15px; margin-bottom: 5px; font-size: 1.1rem; color: #1e293b;">Variations & Sub-types:</h4>
                         <ul class="camera-features">
-                            <li>No glass reflection issues</li>
-                            <li>Easy adjustment post-install</li>
-                            <li>Excellent color night-vision</li>
+                            <li><strong>Audio-Enabled Turret:</strong> Built-in microphone for high-quality audio recording.</li>
+                            <li><strong>Dual-Illumination:</strong> Switches from IR to white light when motion is detected.</li>
+                            <li><strong>Wide-Angle Eyeball:</strong> Maximizes the coverage area for open spaces.</li>
                         </ul>
                         <a href="#quote" class="btn btn-outline btn-small">Get Quote</a>
                     </div>
                 </div>
 
-                <!-- PTZ Camera -->
+                <!-- PTZ Camera (Longse) -->
                 <div class="camera-type-row reverse">
                     <div class="camera-type-image">
-                        <img src="images/cctv_ptz_1772653789308.png" alt="PTZ Camera">
+                        <img src="images/longse_ptz_1773497008566.png" alt="Longse PTZ Camera" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px; display: block;">
                     </div>
                     <div class="camera-type-info">
                         <h3>PTZ Cameras</h3>
                         <p>Pan, Tilt, and Zoom functionality. Actively adjust the camera lens via app to look around or
                             zoom in up to 30x on specific details.</p>
+                        <h4 style="margin-top: 15px; margin-bottom: 5px; font-size: 1.1rem; color: #1e293b;">Variations & Sub-types:</h4>
                         <ul class="camera-features">
-                            <li>360-degree controllable viewing</li>
-                            <li>Optical zoom for fine details</li>
-                            <li>Auto-tracking capabilities</li>
+                            <li><strong>Mini PTZ:</strong> Compact version suitable for residential and small retail use.</li>
+                            <li><strong>Long-Range Auto-Tracking:</strong> Automatically locks onto and follows moving objects.</li>
+                            <li><strong>Laser PTZ:</strong> Extreme long-distance night vision up to hundreds of meters.</li>
                         </ul>
                         <a href="#quote" class="btn btn-outline btn-small">Get Quote</a>
                     </div>
@@ -236,9 +288,7 @@
                         <span class="icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>We provide both! Depending on your wiring and budget, we offer Pro Series HD Analog cameras
-                            utilizing standard coaxial cables, as well as high-performance Network (IP) PoE cameras for
-                            smarter analytics.</p>
+                        <p>We provide both! Depending on your wiring and budget, we offer Pro Series HD Analog cameras utilizing standard coaxial cables, as well as high-performance Network (IP) PoE cameras for smarter analytics. We specialize in Villa camera systems from premium brands like Longse.</p>
                     </div>
                 </div>
 
