@@ -13,6 +13,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Center incomplete last row in projects grid */
+        .projects-grid {
+            display: flex !important;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .projects-grid .project-card {
+            width: calc(25% - 15px);
+            min-width: 240px;
+            max-width: 300px;
+        }
+        @media (max-width: 1024px) {
+            .projects-grid .project-card {
+                width: calc(33.333% - 14px);
+            }
+        }
+        @media (max-width: 768px) {
+            .projects-grid .project-card {
+                width: calc(50% - 10px);
+            }
+        }
+        @media (max-width: 480px) {
+            .projects-grid .project-card {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -279,6 +308,69 @@
                     </div>
                     <div class="product-content text-center" style="padding: 20px;">
                         <h3 style="margin: 0; font-size: 1.1rem;">Vista</h3>
+                    </div>
+                </div>
+                <!-- Project 25 -->
+                <div class="project-card">
+                    <div class="product-image-container">
+                        <img src="https://logo.clearbit.com/diamondbeachtrading.com" onerror="this.onerror=null;this.src='images/project_office.png';" alt="Diamond Beach Trading Est" class="product-image" style="object-fit: contain; padding: 20px; background: white; width: 100%; height: 100%;">
+                    </div>
+                    <div class="product-content text-center" style="padding: 20px;">
+                        <h3 style="margin: 0; font-size: 1.1rem;">Diamond Beach Trading Est</h3>
+                    </div>
+                </div>
+                <!-- Project 26 -->
+                <div class="project-card">
+                    <div class="product-image-container">
+                        <img src="https://logo.clearbit.com/sirajquryat.com" onerror="this.onerror=null;this.src='images/project_security.png';" alt="Siraj Quryat Trading LLC" class="product-image" style="object-fit: contain; padding: 20px; background: white; width: 100%; height: 100%;">
+                    </div>
+                    <div class="product-content text-center" style="padding: 20px;">
+                        <h3 style="margin: 0; font-size: 1.1rem;">Siraj Quryat Trading LLC</h3>
+                    </div>
+                </div>
+                <!-- Project 27 -->
+                <div class="project-card">
+                    <div class="product-image-container">
+                        <img src="https://logo.clearbit.com/assarain.com" onerror="this.onerror=null;this.src='images/project_villa.png';" alt="Assarain Furnishing LLC" class="product-image" style="object-fit: contain; padding: 20px; background: white; width: 100%; height: 100%;">
+                    </div>
+                    <div class="product-content text-center" style="padding: 20px;">
+                        <h3 style="margin: 0; font-size: 1.1rem;">Assarain Furnishing LLC</h3>
+                    </div>
+                </div>
+                <!-- Project 28 -->
+                <div class="project-card">
+                    <div class="product-image-container">
+                        <img src="https://logo.clearbit.com/towelltalati.com" onerror="this.onerror=null;this.src='images/project_sound.png';" alt="Towell Talati LLC" class="product-image" style="object-fit: contain; padding: 20px; background: white; width: 100%; height: 100%;">
+                    </div>
+                    <div class="product-content text-center" style="padding: 20px;">
+                        <h3 style="margin: 0; font-size: 1.1rem;">Towell Talati LLC</h3>
+                    </div>
+                </div>
+                <!-- Project 29 -->
+                <div class="project-card">
+                    <div class="product-image-container">
+                        <img src="https://logo.clearbit.com/uniqueintl.com" onerror="this.onerror=null;this.src='images/slideshow_1.png';" alt="Unique International LLC" class="product-image" style="object-fit: contain; padding: 20px; background: white; width: 100%; height: 100%;">
+                    </div>
+                    <div class="product-content text-center" style="padding: 20px;">
+                        <h3 style="margin: 0; font-size: 1.1rem;">Unique International LLC</h3>
+                    </div>
+                </div>
+                <!-- Project 30 -->
+                <div class="project-card">
+                    <div class="product-image-container">
+                        <img src="https://logo.clearbit.com/ariescontracting.com" onerror="this.onerror=null;this.src='images/smart_film_residential_1773339583395.png';" alt="Aries Contracting &amp; Interiors LLC" class="product-image" style="object-fit: contain; padding: 20px; background: white; width: 100%; height: 100%;">
+                    </div>
+                    <div class="product-content text-center" style="padding: 20px;">
+                        <h3 style="margin: 0; font-size: 1.1rem;">Aries Contracting &amp; Interiors LLC</h3>
+                    </div>
+                </div>
+                <!-- Project 31 -->
+                <div class="project-card">
+                    <div class="product-image-container">
+                        <img src="https://logo.clearbit.com/elegantwindow.com" onerror="this.onerror=null;this.src='images/slideshow_5.png';" alt="Elegant Window LLC" class="product-image" style="object-fit: contain; padding: 20px; background: white; width: 100%; height: 100%;">
+                    </div>
+                    <div class="product-content text-center" style="padding: 20px;">
+                        <h3 style="margin: 0; font-size: 1.1rem;">Elegant Window LLC</h3>
                     </div>
                 </div>
             </div>
